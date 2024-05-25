@@ -1,5 +1,8 @@
 .our-services {
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     h1, p {
         text-align: center;
@@ -9,12 +12,28 @@
         font-size: 19px;
     }
 
+    @include lg {
+
+        margin-top: 60px;
+
+        h1 {
+            margin-bottom: 20px;
+        }
+        
+        p {
+            width: 900px;
+            font-size: 20px;
+            line-height: 40px;
+            padding-bottom: 40px;
+        }
+    }
+
     .our-services__list {
         padding-top: 40px;
         .our-services__list__item {
             background: white;
             border-radius: 20px;
-            box-shadow: 0 0 20px rgba(0,0,0,.1);
+            box-shadow: 0 0 60px rgba(0,0,0,.06);
             padding: 30px;
             margin-bottom: 30px;
 
@@ -40,6 +59,10 @@
                 color: $paragraph-text;
 
                 line-height: 30px;
+
+                @include lg {
+                    color: lighten($color: $paragraph-text, $amount: 10);
+                }
             }
 
             .our-services__list__item__learn-more-link {
@@ -68,11 +91,30 @@
 
                 }
             }
+
+            @include md {
+                width: 38%;
+            }
+
+            @include lg {
+                width: 20%;
+            }
         }
 
         .our-services__list__item:first-child {
             box-shadow: none;
             border: 2px solid $violet;
         }
+
+        @include md {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+
+            justify-content: center;
+        }
     }
+
+    
+
 }

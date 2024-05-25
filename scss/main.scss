@@ -1,11 +1,14 @@
 // main.scss
 
-// Imports
-@import 'constants';
-@import 'colours';
-@import 'base';
+// Constants
+@import 'setup/responsive';
+@import 'setup/constants';
+@import 'setup/colours';
+@import 'setup/base';
 
+// Elements
+@import 'elements/menu';
+@import 'elements/buttons';
 
-@import 'menu';
-@import 'buttons';
-@import 'index';
+// Pages
+@import 'index/index';

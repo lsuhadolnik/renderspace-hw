@@ -1,9 +1,35 @@
 <div class="main-app-menu">
+    <div class="main-app-menu__inner">
     {% include "partials/appLogo.html" %}
 
-    <div class="main-app-menu__actions">
-        {% include "buttons/violetOutlineButton.html" %}
-
-        {% include "partials/mobileMenu.html" %}
+    <div class="main-app-menu__links">
+        <div class="main-app-menu__links__link">
+            <a href="#">Home</a>
+        </div>
+        <div class="main-app-menu__links__link">
+            <a href="#">About Us</a>
+        </div>
+        <div class="main-app-menu__links__link">
+            <a href="#">Our Services</a>
+        </div>
+        <div class="main-app-menu__links__link">
+            <a href="#">Responsibilities</a>
+        </div>
+        <div class="main-app-menu__links__link">
+            <a href="#">Country</a>
+        </div>
     </div>
+
+    <div class="main-app-menu__actions">
+
+        <div class="main-app-menu__apply-button mobile-hidden">
+            Apply
+        </div>
+
+        <div class="main-app-menu__mobile-menu">
+            <img src="img/menuButton.png" alt="Click here to open the menu" width="50"/>
+        </div>
+    </div>
+
+</div>
 </div>

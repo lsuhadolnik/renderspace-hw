@@ -1,27 +1,60 @@
 .hero {
+	.hero__text {
+		padding: 20px;
 
-    .hero__text {
-        padding: 20px;
+		h1 {
+			font-size: 45px;
 
-    h1 {
-        font-size: 45px;
+            @include lg {
+                font-size: 52px;
+            }
+		}
+
+		.hero__title__emphasis {
+			color: $violet;
+		}
+
+		p {
+			font-size: 19px;
+			line-height: 27px;
+
+            @include lg {
+                line-height: 40px;
+                padding-bottom: 20px;
+            }
+		}
+
+        @include lg {
+            width: 700px;
+            padding: 100px 10px 0 130px;
+        }
+	}
+
+    .hero__social-buttons {
+        @include lg {
+            padding-top: 20px;
+        }
     }
 
-    .hero__title__emphasis {
-        color: $violet;
-    }
+	.hero__image {
+		width: 100%;
 
-    p {
-        font-size: 19px;
-        line-height: 27px;
-    }
-    }
+		img {
+			width: 100%;
+		}
 
-    .hero__image {
-        width: 100%;
+        @include lg {
+            width: 50%;
+        }
+	}
 
-        img {
-            width: 100%;
+    @include md {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+
+        .hero__image {
+            align-self: flex-end;
         }
     }
 }
