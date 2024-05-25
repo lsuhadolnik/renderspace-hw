@@ -1,3 +1,18 @@
-body {
-    background: red;
+// index.scss
+
+.hero {
+    padding: 20px;
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .hero__title__emphasis {
+        color: $violet;
+    }
+
+    p {
+        font-size: 19px;
+        line-height: 27px;
+    }
 }

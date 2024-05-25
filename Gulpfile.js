@@ -123,7 +123,7 @@ gulp.task('sassdoc', function() {
 gulp.task('watch', function() {
     // Watch the sass input folder for change,
     // and run `sass` task when something happens
-    gulp.watch(input, ['sass']).on('change', function(event) {
+    gulp.watch('./scss/**/*.scss', ['sass']).on('change', function(event) {
       console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
     });
 

@@ -1,0 +1,44 @@
+.main-app-menu__apply-button {
+    color: #505050;
+    border: 2.5px solid $violet;
+    border-radius: 15px;
+    padding: 8px 35px 8px 35px;
+    font-size: 16px;
+}
+
+
+.button__violet-filled {
+    color: white;
+    border: 2.5px solid $violet;
+    background-color: $violet;
+    border-radius: 10px;
+    padding: 20px 35px 20px 35px;
+    font-size: 20px;
+
+    width: 200px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social-buttons {
+    display: flex;
+    flex:1;
+    padding-top: 10px;
+
+
+    .social-buttons__button {
+        padding: 10px 20px 10px 0;
+        cursor: pointer;
+        transition: .2s ease-in-out transform;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &:active {
+            transform: scale(.9);
+        }
+    }
+}
