@@ -16,6 +16,8 @@ var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
 var siteOutput = './dist';
 
+const IncludeWithNunjucksExtension = require('nunjucks-include-with');
+
 
 // -----------------------------------------------------------------------------
 // Configuration
@@ -64,7 +66,10 @@ gulp.task('scripts', function() {
 // -----------------------------------------------------------------------------
 
 gulp.task('nunjucks', function() {
-  nunjucksRender.nunjucks.configure(['./templates/']);
+  const nunjucksEnv = nunjucksRender.nunjucks.configure(['./templates/']);
+  /*nunjucksEnv.addExtension('includeWith', new IncludeWithNunjucksExtension({
+    nunjucksEnv
+  }))*/
   // Gets .html and .nunjucks files in pages
   return gulp.src(inputTemplates)
   // Renders template with nunjucks
@@ -126,6 +131,7 @@ gulp.task('watch', function() {
 
     // Watch nunjuck templates and reload browser if change
     gulp.watch(inputTemplates, ['nunjucks']).on('change', browserSync.reload);
+    gulp.watch("./templates/**/*.html", ['nunjucks']).on('change', browserSync.reload);
 
 });
 
