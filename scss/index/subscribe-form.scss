@@ -1,0 +1,30 @@
+.subscribe-form {
+    padding: $global-padding;
+
+    padding-bottom: 2000px;
+
+    h1 {
+        text-align: center;
+    }
+
+    form {
+
+        .subscribe-form__input {
+
+            margin-bottom: 30px;
+
+            label {
+                padding: 0 0 10px 10px;
+                display: block;
+            }
+    
+            input {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                font-size: 19px;
+
+            }
+        }
+    }
+}

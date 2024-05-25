@@ -12,3 +12,7 @@ html, body {
 p {
 	color: $paragraph-text;
 }
+
+input {
+	box-sizing: border-box;
+}
