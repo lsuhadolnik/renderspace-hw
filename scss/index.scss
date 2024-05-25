@@ -27,3 +27,82 @@
         }
     }
 }
+
+.our-services {
+    padding: 15px;
+
+    h1, p {
+        text-align: center;
+    }
+
+    p {
+        font-size: 19px;
+    }
+
+    .our-services__list {
+        padding-top: 40px;
+        .our-services__list__item {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,.1);
+            padding: 30px;
+            margin-bottom: 30px;
+
+            .our-services__list__item__icon {
+                width: 80px;
+                padding-bottom: 30px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .our-services__list__item__title {
+                color: $heading-text;
+                font-weight: bold;
+                font-size: 26px;
+
+                padding-bottom: 15px
+            }
+
+            .our-services__list__item__description {
+                font-size: 19px;
+                color: $paragraph-text;
+
+                line-height: 30px;
+            }
+
+            .our-services__list__item__learn-more-link {
+                color: $violet;
+                font-weight: bold;
+                display: inline-block;
+                padding-bottom: 2px;
+                padding-top: 20px;
+                font-size: 18px;
+                
+                a {
+                    text-decoration: none;
+                    color: inherit;
+
+                    &:after {
+                        content: '→';
+                        font-weight: bold;
+                        font-size: 20px;
+                        padding-left: 10px;
+                    }
+                }
+
+                &:hover {
+                    padding-bottom: 0px;
+                    border-bottom: 2px solid $violet;
+
+                }
+            }
+        }
+
+        .our-services__list__item:first-child {
+            box-shadow: none;
+            border: 2px solid $violet;
+        }
+    }
+}
