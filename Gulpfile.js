@@ -53,6 +53,7 @@ gulp.task('sass', function() {
 gulp.task('scripts', function() {
   return gulp.src([
 	  	'./bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
+	  	'./node_modules/just-validate/dist/just-validate.production.min.js',
 	  	'js/main.js'
   	])
     .pipe(concat({ path: 'main.js'}))

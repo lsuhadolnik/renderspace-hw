@@ -4,6 +4,20 @@
     border-radius: 15px;
     padding: 8px 35px 8px 35px;
     font-size: 16px;
+    user-select: none;
+    cursor: pointer;
+
+    transition: .1s ease-in-out border-color;
+
+    &:hover {
+        border-color: darken($color: $violet, $amount: 10);
+    }
+    &:active {
+        transition: .1s ease-in-out background-color;
+        color: white;
+        border-color: darken($color: $violet, $amount: 20);
+        background-color: darken($color: $violet, $amount: 20);
+    }
 }
 
 
@@ -14,13 +28,26 @@
     border-radius: 10px;
     padding: 20px 35px 20px 35px;
     font-size: 20px;
+    user-select: none;
 
     width: 200px;
+
+    transition: .1s ease-in-out background-color;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($color: $violet, $amount: 10);
+    }
+    &:active {
+        background-color: darken($color: $violet, $amount: 20);
+    }
 }
+
+
 
 .social-buttons {
     display: flex;

@@ -23,6 +23,7 @@
     "sassdoc": "^2.1.15"
   },
   "dependencies": {
+    "just-validate": "^4.3.0",
     "nunjucks-include-with": "^1.0.5"
   }
 }
