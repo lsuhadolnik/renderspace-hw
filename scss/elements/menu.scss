@@ -1,7 +1,14 @@
 .main-app-menu {
+
+    transition: box-shadow .4s;
+
 	display: flex;
 	flex: 1;
 	flex-direction: row;
+
+    width: 100%;
+    position: fixed;
+    background-color: white;
 
 	.main-app-menu__inner {
 		display: flex;
@@ -73,4 +80,9 @@
 			}
 		}
 	}
+}
+
+.main-app-menu__scrolled {
+    
+    box-shadow: 0 0 60px rgba(0,0,0,.1);
 }

@@ -42,4 +42,14 @@ window.onload = () => {
                 email: fEmail.value,
             })
         })
+
+        document.addEventListener('scroll', function() {
+            const scrolledClass = "main-app-menu__scrolled";
+            var myElement = document.querySelector('.main-app-menu');
+            if (window.scrollY > 30) {
+              myElement.classList.add(scrolledClass);
+            } else {
+              myElement.classList.remove(scrolledClass);
+            }
+          });
 };

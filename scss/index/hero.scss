@@ -1,4 +1,7 @@
 .hero {
+
+    padding-top: 100px;
+
 	.hero__text {
 		padding: 20px;
 
@@ -52,6 +55,8 @@
         display: flex;
         flex: 1;
         flex-direction: row;
+
+        padding-top: 170px;
 
         .hero__image {
             align-self: flex-end;
